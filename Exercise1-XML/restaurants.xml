@@ -1,0 +1,44 @@
+<restaurants>
+    <restaurant id="res01">
+        <name>Yellow-Chilli</name>
+        <address>New Delhi</address>
+        <lat>47.608940</lat>
+        <lng>-122.340141</lng>
+        <type>Sitdown</type>
+    </restaurant>
+    <restaurant id="res02">
+        <name>Chutneys</name>
+        <address>Hyderabad</address>
+        <lat>36.608940</lat>
+        <lng>-360.340141</lng>
+        <type>Sitdown</type>
+    </restaurant>
+    <restaurant id="res03">
+        <name>Paradise</name>
+        <address>Hyderabad</address>
+        <lat>42.608940</lat>
+        <lng>-62.340141</lng>
+        <type>Sitdown</type>
+    </restaurant>
+    <restaurant id="res04">
+        <name>Juniper-Bar</name>
+        <address>New Delhi</address>
+        <lat>49.608940</lat>
+        <lng>-124.340141</lng>
+        <type>Bar</type>
+    </restaurant>
+    <restaurant id="res05">
+        <name>Quoin</name>
+        <address>New Delhi</address>
+        <lat>54.608940</lat>
+        <lng>-132.340141</lng>
+        <type>Bar</type>
+    </restaurant>
+    <restaurant id="res06">
+        <name>The-Flying-Elephant</name>
+        <address>Chennai</address>
+        <lat>60.608940</lat>
+        <lng>-145.340141</lng>
+        <type>Sitdown</type>
+    </restaurant>
+</restaurants>
