@@ -17,19 +17,33 @@ function restaurantDetails(xml) {
 
   // Start to fetch the data by using TagName
   for (var i = 0; i < resData.length; i++) {
-    card +=
-    '<div class="card col-md-5"><div class="card-body" id="card-details">' +
-      '<h5 class="card-title">' +
-        resData[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
-      '</h5>' +
-      '<ul class="card-text">' +
-        '<li><strong>Location:</strong> '+resData[i].getElementsByTagName("address")[0].childNodes[0].nodeValue+'</li>'+
-          '<li><strong>Latitude:</strong> '+resData[i].getElementsByTagName("lat")[0].childNodes[0].nodeValue+'</li>' +
-          '<li><strong>Longitude:</strong> '+resData[i].getElementsByTagName("lng")[0].childNodes[0].nodeValue+'</li>' +
-          '<li><strong>Restaurant Type:</strong> '+resData[i].getElementsByTagName("type")[0].childNodes[0].nodeValue+'</li>'+
-      '</ul></div></div>';
-       // Print the xml data in table form
-       document.getElementById("card-details").innerHTML = card;
+
+    if (resData[i].getElementsByTagName("type")[0].childNodes[0].nodeValue == "Sit-Down") {
+      card +=
+        '<div class="type-sitdown card col-md-5"><div class="card-body" id="card-details">' +
+          '<h5 class="card-title">' +
+            resData[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+          '</h5>' +
+          '<ul class="card-text">' +
+            '<li><strong>Location:</strong> '+resData[i].getElementsByTagName("address")[0].childNodes[0].nodeValue+'</li>'+
+              '<li><strong>Latitude:</strong> '+resData[i].getElementsByTagName("lat")[0].childNodes[0].nodeValue+'</li>' +
+              '<li><strong>Longitude:</strong> '+resData[i].getElementsByTagName("lng")[0].childNodes[0].nodeValue+'</li>' +
+              '<li><strong>Restaurant Type:</strong> '+resData[i].getElementsByTagName("type")[0].childNodes[0].nodeValue+'</li>'+
+          '</ul></div></div>';       
+    }else {
+      card +=
+        '<div class="type-bar card col-md-5"><div class="card-body" id="card-details">' +
+          '<h5 class="card-title">' +
+            resData[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+          '</h5>' +
+          '<ul class="card-text">' +
+            '<li><strong>Location:</strong> '+resData[i].getElementsByTagName("address")[0].childNodes[0].nodeValue+'</li>'+
+              '<li><strong>Latitude:</strong> '+resData[i].getElementsByTagName("lat")[0].childNodes[0].nodeValue+'</li>' +
+              '<li><strong>Longitude:</strong> '+resData[i].getElementsByTagName("lng")[0].childNodes[0].nodeValue+'</li>' +
+              '<li><strong>Restaurant Type:</strong> '+resData[i].getElementsByTagName("type")[0].childNodes[0].nodeValue+'</li>'+
+          '</ul></div></div>'
+    }
+    
   }
 
   // Print the xml data in card form
