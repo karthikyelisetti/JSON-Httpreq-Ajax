@@ -3,15 +3,21 @@
   padding: 0;
 }
 body {
-    background: linear-gradient(to bottom, #f3e9ff, #fff);
+    background: linear-gradient(to right, #f3e9ff, #fff);
+    background-image: url("https://www.teahub.io/photos/full/41-417767_restaurant-menu-theme-backgrounds-menu-restaurant.jpg");
 }
 ul li {
   list-style: none;
 }
 .card {
-  width: 400px;
+  width: 360px;
   margin: 30px;
 }
 .type-bar {
-    background: linear-gradient(to bottom, #50376d, #fff);
+    color: #422564;
+    color: rgb(65, 91, 13)
+}
+.card-image {
+    width: 330px;
+    height: 150px;
 }

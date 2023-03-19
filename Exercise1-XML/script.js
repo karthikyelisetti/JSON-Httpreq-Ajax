@@ -20,7 +20,9 @@ function restaurantDetails(xml) {
 
     if (resData[i].getElementsByTagName("type")[0].childNodes[0].nodeValue == "Sit-Down") {
       card +=
-        '<div class="type-sitdown card col-md-5"><div class="card-body" id="card-details">' +
+        '<div class="type-sitdown card col-md-5">' +
+        '<img src="'+resData[i].getElementsByTagName("image")[0].childNodes[0].nodeValue+'" class="card-image card-img-top" alt="restaurant-image">' +
+          '<div class="card-body" id="card-details">' +          
           '<h5 class="card-title">' +
             resData[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
           '</h5>' +
@@ -32,7 +34,9 @@ function restaurantDetails(xml) {
           '</ul></div></div>';       
     }else {
       card +=
-        '<div class="type-bar card col-md-5"><div class="card-body" id="card-details">' +
+        '<div class="type-bar card col-md-5">' +
+        '<img src="'+resData[i].getElementsByTagName("image")[0].childNodes[0].nodeValue+'" class="card-image card-img-top" id="card-image" alt="restaurant-image">' +
+          '<div class="card-body" id="card-details">' +
           '<h5 class="card-title">' +
             resData[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
           '</h5>' +

@@ -5,6 +5,7 @@
         <lat>47.608940</lat>
         <lng>-122.340141</lng>
         <type>Sit-Down</type>
+        <image>https://i.ytimg.com/vi/AcbNkTRFJHk/maxresdefault.jpg</image>
     </restaurant>
     <restaurant id="res02">
         <name>Chutneys</name>
@@ -12,6 +13,7 @@
         <lat>36.608940</lat>
         <lng>-360.340141</lng>
         <type>Sit-Down</type>
+        <image>https://www.chutneyscambridge.com/files/images/logo.png</image>
     </restaurant>
     <restaurant id="res03">
         <name>Paradise</name>
@@ -19,6 +21,7 @@
         <lat>42.608940</lat>
         <lng>-62.340141</lng>
         <type>Sit-Down</type>
+        <image>http://paradisefoodcourt.in/images/logos/Paradise-Logo1.jpg</image>
     </restaurant>
     <restaurant id="res04">
         <name>Juniper-Bar</name>
@@ -26,6 +29,7 @@
         <lat>49.608940</lat>
         <lng>-124.340141</lng>
         <type>Bar</type>
+        <image>https://cdn.nicobar.com/media/blogs/1506321269banner_JB.jpg</image>
     </restaurant>
     <restaurant id="res05">
         <name>Quoin</name>
@@ -33,6 +37,7 @@
         <lat>54.608940</lat>
         <lng>-132.340141</lng>
         <type>Bar</type>
+        <image>https://www.trigunahotels.com/images/room/quoin-bar.jpg</image>
     </restaurant>
     <restaurant id="res06">
         <name>The-Flying-Elephant</name>
@@ -40,5 +45,6 @@
         <lat>60.608940</lat>
         <lng>-145.340141</lng>
         <type>Sit-Down</type>
+        <image>https://booznow.com/wp-content/uploads/2020/05/flying-elephant.jpg</image>
     </restaurant>
 </restaurants>
