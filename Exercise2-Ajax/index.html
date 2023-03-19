@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-primary-subtle">
+    <div class="mt-5" id="liveAlertPlaceholder"></div>
+    <form class="row g-3 mt-2">
+      <div class="input-group mb-3 w-25 mt-5" id="search">
+        <input
+          type="text"
+          id="search-text"
+          class="form-control"
+          placeholder="enter the country you are looking for"
+          aria-label="Country"
+          aria-describedby="search-btn"
+        />
+        <button
+          class="btn btn-outline-secondary"
+          type="button"
+          id="search-btn"
+          onclick="getCountryDetails()"
+        >
+          Search country
+        </button>
+      </div>
+    </form>
+    <table class="table table-striped mt-5">
+      <thead class="table-dark">
+        <tr>
+          <th>Rank</th>
+          <th>Country</th>
+          <th>Population</th>
+          <th>Growth rate</th>
+          <th>Area</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
